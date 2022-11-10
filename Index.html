@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Weather🌞</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+<body>
+<div class="alpha">
+    <h1> Date </h1>
+    <h6>
+        city
+    </h6>
+    <form>
+        <input type="search" id="search" placeholder="Search for your city">
+        <input type="submit" id="cityButton">
+        <br>
+        <button class="currentLocation" id="currentLocation">Use Current Location</button>
+    </form>
+<div class="beta"> 
+<button class="sunday1">
+    <div class="delta">
+    <h5 class="epsilon">SUNDAY</h5>
+    <p class="zeta">
+        85&degF / 29&degC
+        <br>
+        🌞
+        <br>
+        Sunny
+    </p>
+    </div>
+</button>
+<br>
+<button class="monday">
+    <div class="delta">
+        <h5 class="epsilon">MONDAY</h5>
+        <p><span class="zeta">
+        71&degF / 22&degC</span>
+        <br>
+        🌬
+        <br>
+        <span class="zeta">
+         Windy</span>
+        </p>
+    </div>
+</button>
+<br>  
+<button class="tuesday">
+    <div class="delta">
+        <h5 class="epsilon">TUESDAY</h5>
+        <p class="zeta">
+            74&degF / 23&degC
+            <br>
+            ⛅
+            <br>
+            Cloudy
+        </p>
+    </div>
+</button>
+<br>
+<button class="wednesday">
+    <div class="delta">
+        <h5 class="epsilon">WEDNESDAY</h5>
+        <p> <span class="zeta">  
+            75&degF / 24&degC </span>
+            <br>
+            🌤 
+            <br>
+            <span class="zeta">
+            Partly Cloudy</span>
+            </p>
+        </div>
+    </button>   
+</div>
+    
+<div class="gamma">
+    <h2>
+<span class="fahrenheit" id="fahrenheit"> &deg <a href="#" id="fahrenheit-link">F</a> |</span>
+<span class="celsius" id="celsius"> &deg <a href="#" id="celsius-link">C</a> </span> 
+<br>
+<span class="tempNumber" id="tempNumber">74</span>
+    </h2>
+    <h3>
+        🌞  
+    </h3>
+    <h4>
+        Sunny 
+    </h4> 
+</div>
+
+<div class="eta">
+<button class="thursday">
+    <div class="delta">
+        <h5 class="epsilon">THURSDAY</h5>
+        <p class="zeta">
+            75&degF / 24&degC
+            <br>
+            🌞
+            <br>
+            Sunny
+        </p>
+    </div>
+</button>
+<br>
+<button class="friday">
+    <div class="delta">
+        <h5 class="epsilon">FRIDAY</h5>
+          <p> <span class="zeta">
+            80&degF / 27&degC 
+          </span>
+          <br>
+            🌧
+            <br>
+            <span class="zeta">
+                Rainy
+            </span>
+        </p>
+    </div>
+</button>
+<br>
+<button class="saturday">
+    <div class="delta">
+        <h5 class="epsilon">SATURDAY</h5>
+        <p class="zeta">
+            78&degF / 27&degC
+            <br>
+              🌞  
+            <br>
+            Sunny
+        </p>
+    </div>
+</button>
+<br>
+<button class="sunday2">
+    <div class="delta">
+        <h5 class="epsilon">SUNDAY</h5>
+        <p class="zeta">
+            90&degF / 32&degC
+            <br>
+            🌞
+            <br>
+            Sunny
+        </p>
+    </div>
+</button> 
+</div>         
+</div>
+</body>
+<script src="weatherapp.js"></script>
+</html>

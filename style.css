@@ -1,0 +1,181 @@
+.alpha {
+    border: 1px solid transparent;
+    width:928px;
+   border-radius: 30px; 
+   margin: 30px auto;
+   display:block;
+background-image: linear-gradient(to bottom right, #C9DEF4, #D0DBEF, #D8D8E9, #DFD5E4, #E6D2DF, #EECFD9, #F5CCD4);
+}
+.beta {
+    text-align:left;
+    display:inline-block;
+    margin-inline-start:30px;
+    margin-inline-end: 0px;
+}
+.gamma {
+    text-align: center;
+    display:inline-block;
+    width:275px;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+.eta {
+    text-align: right;
+    display:inline-block;
+    margin-inline-end: 30px;
+    margin-inline-start: 0px;
+}
+h1 {
+    text-align:center;
+    font-size: 40px;
+    padding-block-start: 10px;
+    padding-block-end: 0px;
+    font-family: aboreto;
+}
+input {
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid rgb(239, 228, 240);
+}
+form {
+    text-align: center;
+}
+h2 {
+    font-size: 40px;
+        padding-block-start: 10px;
+        padding-block-end: 10px;
+        font-family:aboreto;
+}
+h3 { 
+        font-size: 200px;
+            padding-block-start: 40px;
+            padding-block-end: 40px;
+}
+h4 {
+    font-size: 40px;
+    padding-block-start: 10px;
+    padding-block-end: 10px;
+    font-family:aboreto;
+
+}
+
+h6 {
+    text-align: center;
+    font-size: 24px;
+    padding-block-start: 5px;
+    padding-block-end: 0px;
+    font-family: aboreto;
+}
+.fahrenheit {
+
+font-size: 20px;
+}
+.celsius {
+    font-size: 20px;}
+
+.currentLocation {
+    border-radius: 30px;
+    width: 250px;
+    margin: 6px 0px 0px 0px;
+    border: 1px solid rgb(239, 228, 240);
+    background-image: rgb(239, 228, 240);
+}
+.delta {
+    text-align:center;
+    padding-block-start: 10px;
+    transition-duration: 250ms;
+}
+
+.epsilon {
+    font-family:aboreto;
+}
+.zeta {
+    font-family: aboreto;
+}
+
+.sunday1 {
+    border-radius: 30px;
+    width:250px;
+    margin: 30px 0px 6px 0px;
+    border: 1px solid rgb(239, 228, 240);
+background-image: rgb(239, 228, 240);
+}
+.sunday1:hover {
+    background-color: #D0DBEF;
+}
+
+.monday {
+    border-radius: 30px;
+    width: 250px;
+    margin: 6px 0px 6px 0px;
+    border: 1px solid rgb(239, 228, 240);
+background-image: rgb(239,228,240);
+}
+.monday:hover {
+background-color: #D0DBEF;
+}
+
+
+.tuesday {
+    border-radius: 30px;
+    width: 250px;
+    margin: 6px 0px 6px 0px;
+    border: 1px solid rgb(239, 228, 240);
+background-image: rgb(239,228,240);
+}
+.tuesday:hover {
+    background-color: #D0DBEF;
+}
+
+.wednesday {
+    border-radius: 30px;
+    width:250px;
+    margin: 6px 0px 30px 0px;
+    border: 1px solid rgb(239, 228, 240);
+    background-image: rgb(239, 228, 240);
+}
+.wednesday:hover {
+    background-color: #D0DBEF;
+}
+
+.thursday {
+    border-radius: 30px;
+    width: 250px;
+    margin: 30px 0px 6px 0px;
+    border: 1px solid rgb(239, 228, 240);
+background-image: rgb(239,228,240);
+}
+.thursday:hover {
+    background-color: #D0DBEF;
+}
+.friday {
+    border-radius: 30px;
+    width: 250px;
+    margin: 6px 0px 6px 0px;
+    border: 1px solid rgb(239, 228, 240);
+background-image: rgb(239, 228,240);
+}
+.friday:hover {
+    background-color: #D0DBEF;
+}
+.saturday {
+    border-radius: 30px;
+    width: 250px;
+    margin: 6px 0px 6px 0px;
+    border: 1px solid rgb(239, 228, 240);
+    background-image: rgb(239, 228,240);
+}
+.saturday:hover {
+    background-color: #D0DBEF;
+}
+.sunday2 {
+    border-radius: 30px;
+   width:250px;
+   margin: 6px 0px 30px 0px;
+    border: 1px solid rgb(239, 228, 240);
+    background-image: rgb(239, 228,240);
+}
+.sunday2:hover {
+    background-color: #D0DBEF;
+}

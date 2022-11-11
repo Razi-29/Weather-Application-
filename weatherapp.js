@@ -58,7 +58,7 @@ axios.get(apiUrl).then(showTemp);
 function search(event) {
     event.preventDefault();
     let cityInput = document.querySelector("#search").value;
-    searchCity(city);
+    searchCity(cityInput);
 };
 
 let form = document.querySelector("#cityButton");

@@ -29,9 +29,6 @@ background-image: linear-gradient(to bottom right, #C9DEF4, #D0DBEF, #D8D8E9, #D
 font-size: 14px;
 list-style: none;
 }
-.li {
-display: inline-block;
-}
 
 h1 {
     text-align:center;
@@ -74,6 +71,13 @@ h6 {
     padding-block-start: 5px;
     padding-block-end: 0px;
     font-family: aboreto;
+}
+.country {
+    text-align: center;
+        font-size: 24px;
+        padding-block-start: 5px;
+        padding-block-end: 0px;
+        font-family: aboreto;
 }
 .fahrenheit {
 

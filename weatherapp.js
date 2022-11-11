@@ -44,7 +44,7 @@ fahrenheitlink.addEventListener("click", fahrenheit);
 function showTemp(response) {
     console.log(response.data);
     document.querySelector("#tempNumber").innerHTML = Math.round(response.data.temperature.current);
-    document.querySelector("h6").innerHTML = response.data.city;
+    document.querySelector("#cityName").innerHTML = response.data.city;
     document.querySelector("#country").innerHTML = response.data.country;
     document.querySelector("#humidity").innerhtml =  Math.round(response.data.temperature.humidity);
     document.querySelector("#windSpeed").innerHTML = Math.round(response.data.wind.speed);

@@ -49,10 +49,9 @@ function showTemp(response) {
     document.querySelector("#humidity").innerhtml = Math.round(response.data.temperature.humidity);
     document.querySelector("#windSpeed").innerHTML = Math.round(response.data.wind.speed);
     document.querySelector("h4").innerHTML = response.data.condition.description;
-    let icon = document.querySelector("h3");
-    icon.src = pages[`http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
-];
-
+    document.querySelector("h3").setAttribute(`src`,`http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
+    );
+    
 };
 
 function searchCity(cityInput) {

@@ -25,6 +25,10 @@ background-image: linear-gradient(to bottom right, #C9DEF4, #D0DBEF, #D8D8E9, #D
     margin-inline-end: 30px;
     margin-inline-start: 0px;
 }
+.features {
+display: inline;
+float: left;
+}
 h1 {
     text-align:center;
     font-size: 40px;

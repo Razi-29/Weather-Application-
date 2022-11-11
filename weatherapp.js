@@ -43,9 +43,9 @@ fahrenheitlink.addEventListener("click", fahrenheit);
 //Search Bar 
 function showTemp(response){
    document.querySelector("#tempNumber").innerHTML = Math.round(response.data.temperature.current);
-     document.querySelector("h6").innerHTML = response.data.name;
+    document.querySelector("h6").innerHTML = response.data.city;
     document.querySelector("#humidity").innerhtml = Math.round(response.data.temperature.humidity);
-    document.querySelector("windSpeed").innerHTML = Math.round(response.data.wind.speed);
+    document.querySelector("#windSpeed").innerHTML = Math.round(response.data.wind.speed);
     document.querySelector("h4").innerHTML = response.data.condition.description;
     document.querySelector("h3").setAttribute(
         "src",

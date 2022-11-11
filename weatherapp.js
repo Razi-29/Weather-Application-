@@ -49,7 +49,7 @@ function showTemp(response) {
     document.querySelector("#humidity").innerhtml = Math.round(response.data.temperature.humidity);
     document.querySelector("#windSpeed").innerHTML = Math.round(response.data.wind.speed);
     document.querySelector("h4").innerHTML = response.data.condition.description;
-    document.querySelector("h3").innerHTML = response.data.condition.icon;
+    document.querySelector("h3").innerHTML = response.data.condition.icon_url;
 };
 
 function searchCity(cityInput) {

@@ -41,24 +41,20 @@ fahrenheitlink.addEventListener("click", fahrenheit);
 //
 
 //Search Bar 
-function showTemp(response){
-   document.querySelector("#tempNumber").innerHTML = Math.round(response.data.temperature.current);
+function showTemp(response) {
+    document.querySelector("#tempNumber").innerHTML = Math.round(response.data.temperature.current);
     document.querySelector("h6").innerHTML = response.data.city;
     document.querySelector("#humidity").innerhtml = response.data.temperature.humidity;
     document.querySelector("#windSpeed").innerHTML = Math.round(response.data.wind.speed);
     document.querySelector("h4").innerHTML = response.data.condition.description;
-    document.querySelector("h3").setAttribute(
-        "src",
-        `"http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
-  );
-  document.querySelector("h3").setAttribute("alt", response.data.condition.description);
+    document.querySelector("h3").innerHTML = response.data.condition.icon;
 }
-    
+
 function searchCity(cityInput) {
 let apiKey = "3a4dft388a1bcaf4e40f706coecb9a01";
 let apiUrl = "https://api.shecodes.io/weather/v1/current?query="+cityInput+"&key="+apiKey+"&units=imperial";
 axios.get(apiUrl).then(showTemp);
-}
+};
 function search(event) {
     event.preventDefault();
     let cityInput = document.querySelector("#search").value;

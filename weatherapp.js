@@ -13,7 +13,7 @@ let months = ["Jan", "Feb", "Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov
 let month = months[current.getMonth()];
 let date = current.getDate();
 
-h1.innerHTML = `${month} ${date}, ${year} ${day} ${hour}:${minutes}`
+h1.innerHTML = `${month} ${date}, ${year} ${day} ${hour}:${minutes} EST`
 //
 
 // Temp Units change
@@ -49,7 +49,7 @@ function showTemp(response){
     document.querySelector("h4").innerHTML = response.data.condition.description;
     document.querySelector("h3").setAttribute(
         "src",
-        `"http://shecodes-assets.s3.amazonaws.com/api/weather/${response.data.condition.icon}@2x.png`
+        `"http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
   );
   document.querySelector("h3").setAttribute("alt", response.data.condition.description);
 }

@@ -41,14 +41,22 @@ fahrenheitlink.addEventListener("click", fahrenheit);
 //
 
 //Search Bar 
- function showTemp(response) {
-    document.querySelector("#tempNumber").innerHTML = Math.round(response.data.main.temp);
+function showTemp(response){
+   document.querySelector("#tempNumber").innerHTML = Math.round(response.data.temperature.current);
      document.querySelector("h6").innerHTML = response.data.name;
- }
+    document.querySelector("#humidity").innerhtml = Math.round(response.data.temperature.humidity);
+    document.querySelector("windSpeed").innerHTML = Math.round(response.data.wind.speed);
+    document.querySelector("h4").innerHTML = response.data.condition.description;
+    document.querySelector("h3").setAttribute(
+        "src",
+        `"http://shecodes-assets.s3.amazonaws.com/api/weather/${response.data.condition.icon}@2x.png`
+  );
+  document.querySelector("h3").setAttribute("alt", response.data.condition.description);
+}
     
 function searchCity(city) {
-let apiKey = "e66ade2fd3c406fd036807f2f7ce043c";
-let apiUrl = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid="+apiKey+"&units=imperial";
+let apiKey = "3a4dft388a1bcaf4e40f706coecb9a01";
+let apiUrl = "https://api.shecodes.io/weather/v1/current?query="+city+"&key="+apiKey+"&units=imperial";
 axios.get(apiUrl).then(showTemp);
 }
 function search(event) {
@@ -63,10 +71,10 @@ form.addEventListener("click", search);
 
 //Current Location
 function showPosition(position) {
-    let apiKey = "e66ade2fd3c406fd036807f2f7ce043c";
-      let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${
-    position.coords.latitude
-  }&lon=${position.coords.longitude}&appid=${apiKey}&units=imperial`;
+    let apiKey = "3a4dft388a1bcaf4e40f706coecb9a01";
+      let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${position.coords.longitude}
+    &lat=${position.coords.latitude}&key=${apiKey}
+  &units=imperial`;
     let latitude = (position.coords.latitude);
     let longitude = (position.coords.longitude);
 

@@ -46,10 +46,14 @@ function showTemp(response) {
     document.querySelector("#tempNumber").innerHTML = Math.round(response.data.temperature.current);
     document.querySelector("#cityName").innerHTML = response.data.city;
     document.querySelector("#country").innerHTML = `, ${response.data.country}`;
-    document.querySelector("#humid").innerhtml = Math.round(response.data.temperature.humidity);
+    document.querySelector("#humid").innerHTML = Math.round(response.data.temperature.humidity);
     document.querySelector("#windSpeed").innerHTML = Math.round(response.data.wind.speed);
     document.querySelector("h4").innerHTML = response.data.condition.description;
-    document.querySelector("h3").setAttribute("src", response.data.condition.icon_url);
+    let iconElement = document.querySelector("h3");
+    iconElement.setAttribute(
+  `src`,
+  response.data.condition.icon_url
+    );
 };
 
 function searchCity(cityInput) {

@@ -40,7 +40,7 @@ let fahrenheitlink = document.querySelector("#fahrenheit-link");
 fahrenheitlink.addEventListener("click", fahrenheit);
 //
 
-//Search Bar 
+//Search Bar //
 function showTemp(response) {
     console.log(response.data);
     document.querySelector("#tempNumber").innerHTML = Math.round(response.data.temperature.current);

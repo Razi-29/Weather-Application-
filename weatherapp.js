@@ -46,11 +46,10 @@ function showTemp(response) {
     document.querySelector("#tempNumber").innerHTML = Math.round(response.data.temperature.current);
     document.querySelector("#cityName").innerHTML = response.data.city;
     document.querySelector("#country").innerHTML = `, ${response.data.country}`;
-    document.querySelector("#humidity").innerhtml = Math.round(response.data.temperature.humidity);
+    document.querySelector("#humid").innerhtml = Math.round(response.data.temperature.humidity);
     document.querySelector("#windSpeed").innerHTML = Math.round(response.data.wind.speed);
     document.querySelector("h4").innerHTML = response.data.condition.description;
-    document.querySelector("h3").setAttribute("src",`http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
-    ); 
+    document.querySelector("h3").setAttribute('src', response.data.condition.icon_url);
 };
 
 function searchCity(cityInput) {

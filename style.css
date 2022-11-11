@@ -28,15 +28,7 @@ background-image: linear-gradient(to bottom right, #C9DEF4, #D0DBEF, #D8D8E9, #D
 .features {
 display: inline;
 float: left;
-}
-.windSpeed {
-    font-size: 10px;
-}
-.humidity {
-    font-size:10px;
-}
-.precipitation {
-    font-size:10px;
+font-size: 10px;
 }
 h1 {
     text-align:center;

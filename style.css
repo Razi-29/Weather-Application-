@@ -75,8 +75,6 @@ h6 {
 .country {
     text-align: center;
         font-size: 24px;
-        padding-block-start: 5px;
-        padding-block-end: 0px;
         font-family: aboreto;
 }
 .fahrenheit {

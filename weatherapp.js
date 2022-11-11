@@ -49,8 +49,7 @@ function showTemp(response) {
     document.querySelector("#humid").innerHTML = Math.round(response.data.temperature.humidity);
     document.querySelector("#windSpeed").innerHTML = Math.round(response.data.wind.speed);
     document.querySelector("h4").innerHTML = response.data.condition.description;
-    let iconElement = document.querySelector("h3");
-    iconElement.setAttribute(
+    document.querySelector("h3").setAttribute(
   `src`,
   response.data.condition.icon_url
     );

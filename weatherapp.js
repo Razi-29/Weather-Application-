@@ -71,11 +71,8 @@ form.addEventListener("click", search);
 //Current Location
 function showPosition(position) {
     let apiKey = "3a4dft388a1bcaf4e40f706coecb9a01";
-      let apiUrl = `https://api.shecodes.io/weather/v1/current?
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?
     lat=${position.coords.latitude}&lon=${position.coords.longitude}&key=${apiKey}&units=imperial`;
-    let latitude = (position.coords.latitude);
-    let longitude = (position.coords.longitude);
-
 axios.get(apiUrl).then(showTemp);
 };
 

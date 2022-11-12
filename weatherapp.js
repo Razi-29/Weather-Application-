@@ -16,29 +16,7 @@ let date = current.getDate();
 h1.innerHTML = `${month} ${date}, ${year} ${day} ${hour}:${minutes} EST`
 //
 
-// Temp Units change
-function fahrenheit(event) {
-    preventDefault();
-    let temperatureElement = document.querySelector("#tempNumber");
-    let temperatureNumber = temperatureElement.innerHTML;
-    temperatureNumber = Number(temperatureNumber);
-    temperatureElement.innerHTML = Math.round((temperatureNumber * 9) / 5 + 32);
-}
 
-function celsius(event) {
-    preventDefault();
-let temperatureElement = document.querySelector("#tempNumber");
-let temperatureNumber = temperatureElement.innerHTML;
-    temperatureNumber = Number(temperatureNumber);
-    temperatureElement.innerHTML = Math.round(((temperatureNumber - 32) * 5) / 9);
-}
-
-let celsiuslink = document.querySelector("#celsius-link");
-celsiuslink.addEventListener("click", celsius);
-
-let fahrenheitlink = document.querySelector("#fahrenheit-link");
-fahrenheitlink.addEventListener("click", fahrenheit);
-//
 
 //Current Location
 function showPosition(position) {
@@ -82,7 +60,29 @@ let form = document.querySelector("#cityButton");
 form.addEventListener("click", search);
 //
 
+// Temp Units change
+function fahrenheit(event) {
+    preventDefault();
+    let temperatureElement = document.querySelector("#tempNumber");
+    let temperatureNumber = temperatureElement.innerHTML;
+    temperatureNumber = Number(temperatureNumber);
+    temperatureElement.innerHTML = Math.round((temperatureNumber * 9) / 5 + 32);
+}
 
+function celsius(event) {
+    preventDefault();
+let temperatureElement = document.querySelector("#tempNumber");
+let temperatureNumber = temperatureElement.innerHTML;
+    temperatureNumber = Number(temperatureNumber);
+    temperatureElement.innerHTML = Math.round(((temperatureNumber - 32) * 5) / 9);
+}
+
+let celsiuslink = document.querySelector("#celsius-link");
+celsiuslink.addEventListener("click", celsius);
+
+let fahrenheitlink = document.querySelector("#fahrenheit-link");
+fahrenheitlink.addEventListener("click", fahrenheit);
+//
 
 
 

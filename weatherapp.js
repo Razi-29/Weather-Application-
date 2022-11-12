@@ -59,7 +59,7 @@ button.addEventListener("click", getCurrentPosition);
 //Search Bar //
 function showTemp(response) {
     console.log(response.data.coordinates.latitude);
-    document.querySelector("#tempNumber").innerHTML = Math.round(response.data.temperature.current);
+    document.querySelector("#tempNumber").innerHTML = Math.round(response.data.temperature);
     document.querySelector("#cityName").innerHTML = response.data.city;
     document.querySelector("#country").innerHTML = `, ${response.data.country}`;
     document.querySelector("#humid").innerHTML = Math.round(response.data.temperature.humidity);

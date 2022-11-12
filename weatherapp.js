@@ -40,6 +40,26 @@ let fahrenheitlink = document.querySelector("#fahrenheit-link");
 fahrenheitlink.addEventListener("click", fahrenheit);
 //
 
+//Current Location
+function showPosition(position) {
+    let apiKey = "3a4dft388a1bcaf4e40f706coecb9a01";
+      let apiUrl = `https://api.shecodes.io/weather/v1/current?
+    lat=${position.coords.latitude}&lon=${position.coords.longitude}&key=${apiKey}&units=imperial`;
+    let latitude = (position.coords.latitude);
+    let longitude = (position.coords.longitude);
+
+axios.get(apiUrl).then(showTemp);
+};
+
+function getCurrentPosition(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(showPosition);
+};
+
+let button = document.querySelector("#currentLocation");
+button.addEventListener("click", getCurrentPosition);
+//
+
 //Search Bar //
 function showTemp(response) {
     console.log(response.data);
@@ -72,25 +92,6 @@ let form = document.querySelector("#cityButton");
 form.addEventListener("click", search);
 //
 
-//Current Location
-function showPosition(position) {
-    let apiKey = "3a4dft388a1bcaf4e40f706coecb9a01";
-      let apiUrl = `https://api.shecodes.io/weather/v1/current?
-    lat=${position.coords.latitude}&lon=${position.coords.longitude}&key=${apiKey}&units=imperial`;
-    let latitude = (position.coords.latitude);
-    let longitude = (position.coords.longitude);
-
-axios.get(apiUrl).then(showTemp);
-};
-
-function getCurrentPosition(event) {
-    event.preventDefault();
-    navigator.geolocation.getCurrentPosition(showPosition);
-};
-
-let button = document.querySelector("#currentLocation");
-button.addEventListener("click", getCurrentPosition);
-//
 
 
 

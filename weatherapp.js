@@ -43,9 +43,7 @@ fahrenheitlink.addEventListener("click", fahrenheit);
 //Current Location
 function showPosition(position) {
     let apiKey = "e66ade2fd3c406fd036807f2f7ce043c";
-      let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${
-    position.coords.latitude
-  }&lon=${position.coords.longitude}&appid=${apiKey}&units=imperial`;
+      let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=imperial`;
     let latitude = (position.coords.latitude);
     let longitude = (position.coords.longitude);axios.get(apiUrl).then(showTemp);
 };

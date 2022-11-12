@@ -73,6 +73,7 @@ let apiKey = "3a4dft388a1bcaf4e40f706coecb9a01";
 let apiUrl = "https://api.shecodes.io/weather/v1/current?query="+cityInput+"&key="+apiKey+"&units=imperial";
 axios.get(apiUrl).then(showTemp);
 };
+
 function search(event) {
     event.preventDefault();
     let cityInput = document.querySelector("#search").value;

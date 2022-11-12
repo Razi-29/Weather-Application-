@@ -42,7 +42,7 @@ fahrenheitlink.addEventListener("click", fahrenheit);
 
 //Current Location
 function showPosition(position) {
-    console.log();
+    console.log(position);
 };
 
 function getCurrentPosition(event) {

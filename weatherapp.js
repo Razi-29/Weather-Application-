@@ -43,7 +43,7 @@ fahrenheitlink.addEventListener("click", fahrenheit);
 //Current Location
 function showPosition(position) {
     let apiKey = "3a4dft388a1bcaf4e40f706coecb9a01";
-    let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&units=imperial`;
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${response.coordinates.longitude}&lat=${response.coordinates.latitude}&key=${apiKey}&units=imperial`;
     axios.get(apiUrl).then(showTemp);
 };
 

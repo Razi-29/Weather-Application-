@@ -49,10 +49,12 @@ function showTemp(response) {
     document.querySelector("#humid").innerHTML = Math.round(response.data.temperature.humidity);
     document.querySelector("#windSpeed").innerHTML = Math.round(response.data.wind.speed);
     document.querySelector("h4").innerHTML = response.data.condition.description;
-    document.querySelector("h3").setAttribute(
-  `src`,
-  response.data.condition.icon_url
-    );
+    let iconElement = document.querySelector("#icon");
+    iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 };
 
 function searchCity(cityInput) {

@@ -42,9 +42,7 @@ fahrenheitlink.addEventListener("click", fahrenheit);
 
 //Current Location
 function showPosition(position) {
-  let apiKey = "3a4dft388a1bcaf4e40f706coecb9a01";
-    let apiUrl = "https://api.shecodes.io/weather/v1/current?lon="+position.data.coordinates.longitude+"&lat="+position.data.coordinates.latitude+"&key="+apiKey+"&units=imperial";
-    axios.get(apiUrl).then(showTemp);
+    console.log(getCurrentPosition);
 };
 
 function getCurrentPosition(event) {
@@ -59,7 +57,7 @@ button.addEventListener("click", getCurrentPosition);
 //Search Bar //
 function showTemp(response) {
     console.log(response.data.coordinates.latitude);
-    document.querySelector("#tempNumber").innerHTML = Math.round(response.data.temperature);
+    document.querySelector("#tempNumber").innerHTML = Math.round(response.data.temperature.current);
     document.querySelector("#cityName").innerHTML = response.data.city;
     document.querySelector("#country").innerHTML = `, ${response.data.country}`;
     document.querySelector("#humid").innerHTML = Math.round(response.data.temperature.humidity);

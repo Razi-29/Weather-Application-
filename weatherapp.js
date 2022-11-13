@@ -72,9 +72,11 @@ function displayCelsius(event) {
     let celsiusValue = (((fahrenheitTemperature - 32) * 5) / 9);
     temperatureElement.innerHTML = Math.round(celsiusValue);
 }
+
 function displayFahrenheit(event) {
     let temperatureElement = document.querySelector("#tempNumber");
-    temperatureElement.innerHTML = fahrenheitTemperature;
+    let fahrenheitValue = ((celsiuslink* 9) / 5 + 32);
+    temperatureElement.innerHTML = Math.round(fahrenheitValue);
 }
 
 let celsiuslink = document.querySelector("#celsius-link");

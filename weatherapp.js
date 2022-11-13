@@ -61,13 +61,7 @@ form.addEventListener("click", search);
 //
 
 // Temp Units change
-function fahrenheit(event) {
-    preventDefault();
-    let temperatureElement = document.querySelector("#tempNumber");
-    let temperatureNumber = temperatureElement.innerHTML;
-    temperatureNumber = Number(temperatureNumber);
-    temperatureElement.innerHTML = Math.round((temperatureNumber * 9) / 5 + 32);
-}
+
 
 function celsius(event) {
     preventDefault();
@@ -80,8 +74,6 @@ let temperatureNumber = temperatureElement.innerHTML;
 let celsiuslink = document.querySelector("#celsius-link");
 celsiuslink.addEventListener("click", celsius);
 
-let fahrenheitlink = document.querySelector("#fahrenheit-link");
-fahrenheitlink.addEventListener("click", fahrenheit);
 //
 
 

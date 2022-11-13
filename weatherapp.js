@@ -36,7 +36,8 @@ button.addEventListener("click", getCurrentPosition);
 
 //Search Bar //
 function showTemp(response) {
-document.querySelector("#tempNumber").innerHTML = Math.round(response.data.temperature.current);
+    let temperatureElement = document.querySelector("#tempNumber");
+    temperatureElement.innerHTML = Math.round(response.data.temperature.current);
     document.querySelector("#cityName").innerHTML = response.data.city;
     document.querySelector("#country").innerHTML = `, ${response.data.country}`;
     document.querySelector("#humid").innerHTML = Math.round(response.data.temperature.humidity);
@@ -64,13 +65,13 @@ form.addEventListener("click", search);
 
 function celsius(event) {
     preventDefault();
-    let celsiusValue = (((document.querySelector("#tempNumber").innerHTML - 32) * 5) / 9);
-    document.querySelector("#tempNumber").innerHTML = Math.round(celsiusValue);
+    let temperatureElement = document.querySelector("#tempNumber");
+    let celsiusValue = (((temperatureElement.innerHTML - 32) * 5) / 9);
+    temperatureElement.innerHTML = Math.round(celsiusValue);
 }
 
 let celsiuslink = document.querySelector("#celsius-link");
 celsiuslink.addEventListener("click", celsius);
-
 //
 
 

@@ -78,11 +78,14 @@ h6 {
         font-family: aboreto;
 }
 .fahrenheit {
-
+font-size: 12px;
+position: relative;
+}
+.celsius {
+font-size: 12px;
+position: relative;
 }
 
-font-size: 20px;
-}
 .celsius {
     font-size: 20px;}
 

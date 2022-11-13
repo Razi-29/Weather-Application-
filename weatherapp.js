@@ -43,6 +43,9 @@ function showTemp(response) {
     document.querySelector("#humid").innerHTML = Math.round(response.data.temperature.humidity);
     document.querySelector("#windSpeed").innerHTML = Math.round(response.data.wind.speed);
     document.querySelector("h4").innerHTML = response.data.condition.description;
+
+    fahrenheitTemperature = response.data.temperature.current;
+
 };
 
 function searchCity(cityInput) {
@@ -61,6 +64,7 @@ let form = document.querySelector("#cityButton");
 form.addEventListener("click", search);
 //
 
+let fahrenheitTemperature = null;
 // Temp Units change
 
 function celsius(event) {

@@ -69,9 +69,11 @@ let fahrenheitTemperature = null;
 
 function displayCelsius(event) {
     preventDefault();
+   
     let temperatureElement = document.querySelector("#tempNumber");
     let celsiusValue = (((fahrenheitTemperature - 32) * 5) / 9);
     temperatureElement.innerHTML = Math.round(celsiusValue);
+    console.log(celsiusValue);
 }
 
 let celsiuslink = document.querySelector("#celsius-link");

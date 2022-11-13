@@ -64,7 +64,7 @@ form.addEventListener("click", search);
 
 function celsius(event) {
     preventDefault();
-     let celsiusValue =(((document.querySelector("#tempNumber").innerHTML- 32) * 5) / 9)
+    let celsiusValue = (((document.querySelector("#tempNumber").innerHTML - 32) * 5) / 9);
     document.querySelector("#tempNumber").innerHTML = Math.round(celsiusValue);
 }
 

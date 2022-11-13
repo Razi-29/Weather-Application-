@@ -68,8 +68,6 @@ let fahrenheitTemperature = null;
 // Temp Units change
 
 function displayCelsius(event) {
-    preventDefault();
-   
     let temperatureElement = document.querySelector("#tempNumber");
     let celsiusValue = (((fahrenheitTemperature - 32) * 5) / 9);
     temperatureElement.innerHTML = Math.round(celsiusValue);

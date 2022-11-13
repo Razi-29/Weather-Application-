@@ -74,7 +74,7 @@ function displayCelsius(event) {
 }
 function displayFahrenheit(event) {
     let temperatureElement = document.querySelector("#tempNumber");
-    temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+    temperatureElement.innerHTML = fahrenheitTemperature;
 }
 
 let celsiuslink = document.querySelector("#celsius-link");

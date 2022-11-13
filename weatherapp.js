@@ -71,13 +71,6 @@ function celsius(event) {
 let celsiuslink = document.querySelector("#celsius-link");
 celsiuslink.addEventListener("click", celsius);
 
-function fahrenheit(event) {
-    preventDefault();
-    let fahrenheitValue = ((document.querySelector("#tempNumber").innerHTML* 9) / 5 + 32);
-    document.querySelector("#tempNumber").innerHTML = Math.round(fahrenheitValue);
-}
-let fahrenheitlink = document.querySelector("#fahrenheit-link");
-fahrenheitlink.addEventListener("click", fahrenheit);
 //
 
 

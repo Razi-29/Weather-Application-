@@ -66,8 +66,7 @@ form.addEventListener("click", search);
 function celsius(event) {
     preventDefault();
     let temperatureElement = document.querySelector("#tempNumber");
-    let celsiusValue = (((temperatureElement.innerHTML - 32) * 5) / 9);
-    temperatureElement.innerHTML = Math.round(celsiusValue);
+    let celsiusValue = Math.round(((temperatureElement.innerHTML - 32) * 5) / 9);
 }
 
 let celsiuslink = document.querySelector("#celsius-link");

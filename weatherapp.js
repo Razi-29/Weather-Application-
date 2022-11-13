@@ -64,7 +64,7 @@ let form = document.querySelector("#cityButton");
 form.addEventListener("click", search);
 //
 
-let fahrenheitTemperature = null;
+ let fahrenheitTemperature = null;
 // Temp Units change
 
 function displayCelsius(event) {

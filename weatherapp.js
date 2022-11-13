@@ -73,13 +73,6 @@ function displayCelsius(event) {
     temperatureElement.innerHTML = Math.round(celsiusValue);
 }
 
-function displayFahrenheit(event) {
-    event.preventDefault();
-    let temperatureElement = document.querySelector("#tempNumber");
-    let fahrenheitValue = fahrenheitTemperature;
-    temperatureElement.innerHTML = Math.round(fahrenheitValue);
-}
-
 let celsiuslink = document.querySelector("#celsius-link");
 celsiuslink.addEventListener("click", displayCelsius);
 

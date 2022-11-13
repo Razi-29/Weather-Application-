@@ -70,7 +70,8 @@ let fahrenheitTemperature = null;
 function celsius(event) {
     preventDefault();
     let temperatureElement = document.querySelector("#tempNumber");
-    let celsiusValue = Math.round(((temperatureElement.innerHTML - 32) * 5) / 9);
+    let celsiusValue = (((temperatureElement.innerHTML - 32) * 5) / 9);
+    temperatureElement.innerHTML = Math.round(celsiusValue);
 }
 
 let celsiuslink = document.querySelector("#celsius-link");

@@ -65,7 +65,6 @@ form.addEventListener("click", search);
 //
 
 let fahrenheitTemperature = null;
-let 
 // Temp Units change
 
 function displayCelsius(event) {

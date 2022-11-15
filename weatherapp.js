@@ -8,12 +8,12 @@ if (minutes < 10) {
     minutes = `0${minutes}`;
 }
 let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-let day = days[current.getDay()];
+let dayName = days[current.getDay()];
 let months = ["Jan", "Feb", "Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
 let month = months[current.getMonth()];
 let date = current.getDate();
 
-h1.innerHTML = `${month} ${date}, ${year} ${day} ${hour}:${minutes} EST`
+h1.innerHTML = `${month} ${date}, ${year} ${dayName} ${hour}:${minutes} EST`
 //
 
 //Icons//

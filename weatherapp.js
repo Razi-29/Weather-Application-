@@ -64,7 +64,9 @@ daysoftheWeek.forEach(function (daysoftheWeek) {
 </button>
 </div>`;
 });
-
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
 };
 //
 

@@ -45,7 +45,7 @@ function getEmojiFromIconCode(iconCode) {
 //
 
 // Forecast //
-function displayForecast() {
+function displayForecast(weather) {
  let forecastElement = document.querySelector("#forecast");
 
   let forecastDays = ["Thu", "Fri", "Sat", "Sun"];
@@ -57,11 +57,11 @@ function displayForecast() {
 `<div>
     <button class="forecastButton">
         <h5 class="weather-forecast-date">${forecastDays}</h5>
-        <div class="icon" id="icon">🌞 </div>
-        <div class="tempNumber" id="forecast">74</div>
+        <div class="icon" id="icon"> ${getEmojiFromIconCode(response.data.daily[].condition.icon)};</div>
+        <div class="tempNumber" id="forecast">${weather.date.day}</div>
         <span class="fahrenheit" id="fahForcast"> &deg <a href="#" id="fahrenheit-link">F</a> |</span>
         <span class="celsius" id="celForecast">&deg <a href="#" id="celsius-link">C</a> </span>
-        <div class="weatherD" id="weatherD">Sunny</div>
+        <div class="weatherD" id="weatherD">${weather.data.daily[].condition.description} </div>
     </button>
 </div>`;
 });

@@ -47,7 +47,7 @@ function getEmojiFromIconCode(iconCode) {
 // Forecast //
 function displayForecast() {
     let forecastHTML = `<div class="row">`;
-    document.querySelector("#beta").innerHTML = forecastHTML;
+    document.querySelector("#forecast").innerHTML = forecastHTML;
     
     let daysoftheWeek = ["Mon", "Tue", "Wed", "Thu", "Fri"];
     
@@ -56,14 +56,14 @@ function displayForecast() {
     forecastHTML = 
         forecastHTML + 
 `<div>
-<button class="forcastButton">
-<h5 class="weather-forecast-date">${daysoftheWeek}</h5>
-<div class="icon" id="icon">🌞 </div>
-<div class="tempNumber" id="forecast">74</div>
-<span class="fahrenheit" id="fahForcast"> &deg <a href="#" id="fahrenheit-link">F</a> |</span>
-<span class="celsius" id="celForecast">&deg <a href="#" id="celsius-link">C</a> </span>
-<div class="weatherD" id="weatherD">Sunny</div>
-</button>
+    <button class="forecastButton">
+        <h5 class="weather-forecast-date">${daysoftheWeek}</h5>
+        <div class="icon" id="icon">🌞 </div>
+        <div class="tempNumber" id="forecast">74</div>
+        <span class="fahrenheit" id="fahForcast"> &deg <a href="#" id="fahrenheit-link">F</a> |</span>
+        <span class="celsius" id="celForecast">&deg <a href="#" id="celsius-link">C</a> </span>
+        <div class="weatherD" id="weatherD">Sunny</div>
+    </button>
 </div>`;
 });
   forecastHTML = forecastHTML + `</div>`;
@@ -141,7 +141,7 @@ let fahrenheitlink = document.querySelector("#fahrenheit-link");
 fahrenheitlink.addEventListener("click", displayFahrenheit);
 //
 
-
+displayForecast();
 
 
 

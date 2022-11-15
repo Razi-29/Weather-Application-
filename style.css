@@ -6,7 +6,7 @@
    display:block;
 background-image: linear-gradient(to bottom right, #C9DEF4, #D0DBEF, #D8D8E9, #DFD5E4, #E6D2DF, #EECFD9, #F5CCD4);
 }
-.beta {
+.forecast {
     text-align:center;
 margin-top: 20px;
 }
@@ -102,7 +102,7 @@ position: relative;
 }
 
 
-.forcastButton {
+.forecastButton {
     border-radius: 30px;
     width:125px;
     border: 1px solid rgb(239, 228, 240);
@@ -110,7 +110,7 @@ background-image: rgb(239, 228, 240);
 font-size: 12px;
 }
 
-.forcastButton:hover {
+.forecastButton:hover {
     background-color: #D0DBEF;
 }
 .credit {

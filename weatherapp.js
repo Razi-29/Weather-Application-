@@ -57,11 +57,11 @@ function displayForecast(weather) {
 `<div>
     <button class="forecastButton">
         <h5 class="weather-forecast-date">${forecastDays}</h5>
-        <div class="icon" id="icon"> ${getEmojiFromIconCode(response.data.daily[].condition.icon)};</div>
+        <div class="icon" id="icon"> ${getEmojiFromIconCode(response.data.daily[0].condition.icon)};</div>
         <div class="tempNumber" id="forecast">${weather.date.day}</div>
         <span class="fahrenheit" id="fahForcast"> &deg <a href="#" id="fahrenheit-link">F</a> |</span>
         <span class="celsius" id="celForecast">&deg <a href="#" id="celsius-link">C</a> </span>
-        <div class="weatherD" id="weatherD">${weather.data.daily[].condition.description} </div>
+        <div class="weatherD" id="weatherD">${weather.data.daily[0].condition.description} </div>
     </button>
 </div>`;
 });

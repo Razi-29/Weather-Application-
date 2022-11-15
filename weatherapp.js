@@ -16,6 +16,33 @@ let date = current.getDate();
 h1.innerHTML = `${month} ${date}, ${year} ${day} ${hour}:${minutes} EST`
 //
 
+//Icons//
+
+function getEmojiFromIconCode(iconCode) {
+  const codeMap = {
+    "clear-sky-day": "🕶",
+    "few-clouds-day": "🧢",
+    "scattered-clouds-day": "📷",
+    "broken-clouds-day": "🌂",
+    "shower-rain-day": "☂️",
+    "rain-day": "☔️",
+    "thunderstorm-day": "🥽",
+    "snow-day": "⛸",
+    "mist-day": "🦺",
+    "clear-sky-night": "👡",
+    "few-clouds-night": "👞",
+    "scattered-clouds-night": "👢",
+    "broken-clouds-night": "🌂",
+    "shower-rain-night": "☂️",
+    "rain-night": "☔️",
+    "thunderstorm-night": "🥽",
+    "snow-night": "⛸",
+    "mist-night": "🔦",
+  };
+
+  return codeMap[iconCode];
+}
+//
 
 
 //Current Location
@@ -43,8 +70,8 @@ function showTemp(response) {
     document.querySelector("#humid").innerHTML = Math.round(response.data.temperature.humidity);
     document.querySelector("#windSpeed").innerHTML = Math.round(response.data.wind.speed);
     document.querySelector("h4").innerHTML = response.data.condition.description;
-    document.querySelector("#icon").setAttribute("src", response.data.condition.icon_url);
-
+    document.querySelector("h3").innerHTML = getEmojiFromIconCode(response.data.condition.icon);
+   
     fahrenheitTemperature = response.data.temperature.current;
 
 };
@@ -65,7 +92,8 @@ let form = document.querySelector("#cityButton");
 form.addEventListener("click", search);
 //
 
- let fahrenheitTemperature = null;
+let fahrenheitTemperature = null;
+ 
 // Temp Units change
 
 function displayCelsius(event) {
@@ -85,6 +113,9 @@ celsiuslink.addEventListener("click", displayCelsius);
 let fahrenheitlink = document.querySelector("#fahrenheit-link");
 fahrenheitlink.addEventListener("click", displayFahrenheit);
 //
+
+
+
 
 
 

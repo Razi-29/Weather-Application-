@@ -142,7 +142,7 @@ fahrenheitlink.addEventListener("click", displayFahrenheit);
 //
 
 searchCity("Milan");
-displayForecast();
+displayForecast("Milan");
 
 
 

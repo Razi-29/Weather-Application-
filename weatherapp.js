@@ -36,7 +36,7 @@ function getEmojiFromIconCode(iconCode) {
     "shower-rain-night": "🌦",
     "rain-night": "🌧",
     "thunderstorm-night": "⛈",
-    "snow-night": "⛄",
+    "snow-night": "🥶",
     "mist-night": "🌫",
   };
 

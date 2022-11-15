@@ -95,15 +95,17 @@ position: relative;
 
 .weather-forecast-date {
     font-family: aboreto;
+    font-size: 12px;
 }
 
 
 .forcastButton {
     border-radius: 30px;
-    width:250px;
+    width:125px;
     margin: 30px 0px 6px 0px;
     border: 1px solid rgb(239, 228, 240);
 background-image: rgb(239, 228, 240);
+font-size: 12px;
 }
 .forcastButton:hover {
     background-color: #D0DBEF;

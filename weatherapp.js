@@ -53,20 +53,16 @@ let daysoftheWeek = ["Mon", "Tue", "Wed", "Thu", "Fri"];
 daysoftheWeek.forEach(function (daysoftheWeek) {
     forecastHTML = 
         forecastHTML + 
-      `
-      <div class="col-2">
-        <div class="weather-forecast-date">${day}</div>
-        <img
-          src="http://openweathermap.org/img/wn/50d@2x.png"
-          alt=""
-          width="42"
-        />
-        <div class="weather-forecast-temperatures">
-          <span class="weather-forecast-temperature-max"> 18° </span>
-          <span class="weather-forecast-temperature-min"> 12° </span>
-        </div>
-      </div>
-  `;
+`<div>
+<button class="forcastButton">
+<h5 class="weather-forecast-date">${daysoftheWeek}</h5>
+<div class="icon" id="icon">🌞 </div>
+<div class="tempNumber" id="forecast">74</div>
+<span class="fahrenheit" id="fahForcast"> &deg <a href="#" id="fahrenheit-link">F</a> |</span>
+<span class="celsius" id="celForecast">&deg <a href="#" id="celsius-link">C</a> </span>
+<div class="weatherD" id="weatherD">Sunny</div>
+</button>
+</div>`;
 });
 
 };

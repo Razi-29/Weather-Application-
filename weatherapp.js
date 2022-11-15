@@ -44,6 +44,10 @@ function getEmojiFromIconCode(iconCode) {
 }
 //
 
+// Forecast //
+let forecastHTML = document.querySelector("#forecast");
+//
+
 
 //Current Location
 function showPosition(position) {
@@ -70,7 +74,7 @@ function showTemp(response) {
     document.querySelector("#humid").innerHTML = Math.round(response.data.temperature.humidity);
     document.querySelector("#windSpeed").innerHTML = Math.round(response.data.wind.speed);
     document.querySelector("h4").innerHTML = response.data.condition.description;
-    document.querySelector("h3").innerHTML = getEmojiFromIconCode(response.data.condition.icon);
+    document.querySelector("#icon").innerHTML = getEmojiFromIconCode(response.data.condition.icon);
    
     fahrenheitTemperature = response.data.temperature.current;
 

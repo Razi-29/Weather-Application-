@@ -57,6 +57,11 @@ h3 {
             padding-block-start: 40px;
             padding-block-end: 40px;
 }
+.icon {
+    font-size: 200px;
+    padding-block-start: 40px;
+    padding-block-end: 40px;
+}
 
 h4 {
     font-size: 40px;
@@ -100,7 +105,7 @@ position: relative;
     transition-duration: 250ms;
 }
 
-.epsilon {
+.weekDay {
     font-family:aboreto;
 }
 .zeta {

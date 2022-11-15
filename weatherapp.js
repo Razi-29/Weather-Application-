@@ -46,19 +46,22 @@ function getEmojiFromIconCode(iconCode) {
 
 // Forecast //
 function displayForecast() {
-    let forecastElement = document.querySelector("#forcastButton");
+let forecastElement = document.querySelector("#beta");
     
-    let daysoftheWeek = ["Mon", "Tue", "Wed", "Thu", "Fri"];
-    daysoftheWeek.forEach(function (daysoftheWeek) {
-        forecastHTML = `
+let daysoftheWeek = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+
+daysoftheWeek.forEach(function (daysoftheWeek) {
+    forecastHTML = 
     forecastHTML + 
-        <h5 class="weather-forecast-date">${daysoftheWeek}</h5>
-        <div class="icon" id="icon">🌞 </div>
-        <div class="tempNumber" id="forecast">74</div>
-        <span class="fahrenheit" id="fahForcast"> &deg <a href="#" id="fahrenheit-link">F</a> |</span>
-        <span class="celsius" id="celForecast">&deg <a href="#" id="celsius-link">C</a> </span>
-        <div class="weatherD" id="weatherD">Sunny</div>
-</button> `;
+`<button class="forcastButton">
+<h5 class="weather-forecast-date">${daysoftheWeek}</h5>
+<div class="icon" id="icon">🌞 </div>
+<div class="tempNumber" id="forecast">74</div>
+<span class="fahrenheit" id="fahForcast"> &deg <a href="#" id="fahrenheit-link">F</a> |</span>
+<span class="celsius" id="celForecast">&deg <a href="#" id="celsius-link">C</a> </span>
+<div class="weatherD" id="weatherD">Sunny</div>
+</button>
+ `;
     });
     forecastElement.innerHTML = forecastHTML;
 };

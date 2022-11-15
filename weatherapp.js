@@ -46,7 +46,7 @@ function getEmojiFromIconCode(iconCode) {
 
 // Forecast //
 function displayForecast() {
-let forecastElement = document.querySelector("#beta"); 
+    document.querySelector("#beta").innerHTML = forecastHTML;
 let daysoftheWeek = ["Mon", "Tue", "Wed", "Thu", "Fri"];
     let forecastHTML = `<div class="row">`;
 daysoftheWeek.forEach(function (daysoftheWeek) {
@@ -64,7 +64,6 @@ daysoftheWeek.forEach(function (daysoftheWeek) {
 </div>`;
 });
   forecastHTML = forecastHTML + `</div>`;
-  forecastElement.innerHTML = forecastHTML;
   console.log(forecastHTML);
 };
 //

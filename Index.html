@@ -39,7 +39,16 @@
     </h4>
 </div>
 </div>
-<div class="forecast" id="forecast"> </div>
+<div class="forecast" id="forecast"> 
+    <button class="forecastButton">
+        <h5 class="weather-forecast-date">${forecastDay}</h5>
+        <div class="icon" id="icon"> ${getEmojiFromIconCode(forecast[0].condition.icon)};</div>
+        <div class="tempNumber" id="forecast">${forecast.day}</div>
+        <span class="fahrenheit" id="fahForcast"> &deg <a href="#" id="fahrenheit-link">F</a> |</span>
+        <span class="celsius" id="celForecast">&deg <a href="#" id="celsius-link">C</a> </span>
+        <div class="weatherD" id="weatherD">${forecast[0].condition.description} </div>
+    </button>
+</div>
 <div class="credit">
     <a href="https://github.com/Razi-29/Weather-Application-" target="_blank">Open-source code</a>
     by Hillary Jean-Pierre

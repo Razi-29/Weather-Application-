@@ -101,97 +101,21 @@ position: relative;
     text-align:center;
     padding-block-start: 10px;
     transition-duration: 250ms;
-}
-
-.weekDay {
-    font-family:aboreto;
-}
-.zeta {
     font-family: aboreto;
 }
 
-.sunday1 {
+.weather-forecast-date {
+    font-family: aboreto;
+}
+
+
+.forcastButton {
     border-radius: 30px;
     width:250px;
     margin: 30px 0px 6px 0px;
     border: 1px solid rgb(239, 228, 240);
 background-image: rgb(239, 228, 240);
 }
-.sunday1:hover {
-    background-color: #D0DBEF;
-}
-
-.monday {
-    border-radius: 30px;
-    width: 250px;
-    margin: 6px 0px 6px 0px;
-    border: 1px solid rgb(239, 228, 240);
-background-image: rgb(239,228,240);
-}
-.monday:hover {
-background-color: #D0DBEF;
-}
-
-
-.tuesday {
-    border-radius: 30px;
-    width: 250px;
-    margin: 6px 0px 6px 0px;
-    border: 1px solid rgb(239, 228, 240);
-background-image: rgb(239,228,240);
-}
-.tuesday:hover {
-    background-color: #D0DBEF;
-}
-
-.wednesday {
-    border-radius: 30px;
-    width:250px;
-    margin: 6px 0px 30px 0px;
-    border: 1px solid rgb(239, 228, 240);
-    background-image: rgb(239, 228, 240);
-}
-.wednesday:hover {
-    background-color: #D0DBEF;
-}
-
-.thursday {
-    border-radius: 30px;
-    width: 250px;
-    margin: 30px 0px 6px 0px;
-    border: 1px solid rgb(239, 228, 240);
-background-image: rgb(239,228,240);
-}
-.thursday:hover {
-    background-color: #D0DBEF;
-}
-.friday {
-    border-radius: 30px;
-    width: 250px;
-    margin: 6px 0px 6px 0px;
-    border: 1px solid rgb(239, 228, 240);
-background-image: rgb(239, 228,240);
-}
-.friday:hover {
-    background-color: #D0DBEF;
-}
-.saturday {
-    border-radius: 30px;
-    width: 250px;
-    margin: 6px 0px 6px 0px;
-    border: 1px solid rgb(239, 228, 240);
-    background-image: rgb(239, 228,240);
-}
-.saturday:hover {
-    background-color: #D0DBEF;
-}
-.sunday2 {
-    border-radius: 30px;
-   width:250px;
-   margin: 6px 0px 30px 0px;
-    border: 1px solid rgb(239, 228, 240);
-    background-image: rgb(239, 228,240);
-}
-.sunday2:hover {
+.forcastButton:hover {
     background-color: #D0DBEF;
 }

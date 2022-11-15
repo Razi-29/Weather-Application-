@@ -48,9 +48,8 @@ function getEmojiFromIconCode(iconCode) {
 function displayForecast(response) {
     let forecast = response.data.daily;
 
-    let forecastElement = document.querySelector("#forecast");
-
-  let forecastHTML = `<div class="row">`;
+    let forecastHTML =  document.querySelector("#forecast");
+ 
   forecast.forEach(function (forecastDay, index) {
     forecastHTML = 
         forecastHTML + 
@@ -66,7 +65,6 @@ function displayForecast(response) {
 </div>`;
 });
     forecastHTML = forecastHTML + `</div>`;
-    forecastElement.innerHTML = forecastHTML;
   console.log(forecastHTML);
 };
 //

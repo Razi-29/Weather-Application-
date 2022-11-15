@@ -40,8 +40,8 @@ form {
 }
 h2 {
     font-size: 40px;
-        padding-block-start: 10px;
-        font-family:aboreto;
+    padding-block-start: 10px;
+    font-family:aboreto;
 }
 .cond {
     
@@ -112,4 +112,9 @@ font-size: 12px;
 
 .forcastButton:hover {
     background-color: #D0DBEF;
+}
+.small {
+    font-size: 16px;
+    padding-block-start: 10px;
+    font-family: aboreto;
 }

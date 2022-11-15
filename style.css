@@ -7,23 +7,15 @@
 background-image: linear-gradient(to bottom right, #C9DEF4, #D0DBEF, #D8D8E9, #DFD5E4, #E6D2DF, #EECFD9, #F5CCD4);
 }
 .beta {
-    text-align:left;
-    display:inline-block;
-    margin-inline-start:30px;
-    margin-inline-end: 0px;
+    text-align:center;
+margin-top: 20px;
 }
 .gamma {
     text-align: center;
-    display:inline-block;
+    display:inline;
     width:275px;
     margin-inline-start: 40px;
     margin-inline-end: 40px;
-}
-.eta {
-    text-align: right;
-    display:inline-block;
-    margin-inline-end: 30px;
-    margin-inline-start: 0px;
 }
 .features {
 font-size: 14px;
@@ -49,20 +41,17 @@ form {
 h2 {
     font-size: 40px;
         padding-block-start: 10px;
-        padding-block-end: 10px;
         font-family:aboreto;
 }
 h3 { 
-        font-size: 200px;
-            padding-block-start: 40px;
-            padding-block-end: 40px;
+        font-size: 100px;
 }
 .icon {
     font-size: 20px;
 }
 
 h4 {
-    font-size: 40px;
+    font-size: 30px;
     padding-block-start: 10px;
     padding-block-end: 10px;
     font-family:aboreto;

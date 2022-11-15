@@ -114,6 +114,7 @@ font-size: 12px;
     background-color: #D0DBEF;
 }
 .small {
+    text-align: center;
     font-size: 16px;
     padding-block-start: 10px;
     font-family: aboreto;

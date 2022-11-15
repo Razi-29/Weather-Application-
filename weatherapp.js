@@ -46,10 +46,10 @@ function getEmojiFromIconCode(iconCode) {
 
 // Forecast //
 function displayForecast() {
-    let forecastElement = document.querySelector("#forecast");
+    let forecastElement = document.querySelector("#forcastButton");
     let daysoftheWeek = ["Mon", "Tue", "Wed", "Thu", "Fri"];
     daysoftheWeek.forEach(function (daysoftheWeek) {
-        forecastHTML = `<button class="forcastButton">
+    forecastHTML = `<button class="forcastButton">
     <div class="delta">
         <h5 class="weather-forecast-date">${daysoftheWeek}</h5>
         <div class="icon" id="icon">🌞 </div>

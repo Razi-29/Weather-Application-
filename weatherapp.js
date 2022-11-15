@@ -51,7 +51,7 @@ function displayForecast() {
     daysoftheWeek.forEach(function (daysoftheWeek) {
         forecastHTML = `<button class="forcastButton">
     <div class="delta">
-        <h5 class="weather-forecast-date">friDAY</h5>
+        <h5 class="weather-forecast-date">${daysoftheWeek}</h5>
         <div class="icon" id="icon">🌞 </div>
         <div class="tempNumber" id="forecast">74</div>
         <span class="fahrenheit" id="fahForcast"> &deg <a href="#" id="fahrenheit-link">F</a> |</span>

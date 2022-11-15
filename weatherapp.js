@@ -58,8 +58,9 @@ function displayForecast() {
         <span class="fahrenheit" id="fahForcast"> &deg <a href="#" id="fahrenheit-link">F</a> |</span>
         <span class="celsius" id="celForecast">&deg <a href="#" id="celsius-link">C</a> </span>
         <div class="weatherD" id="weatherD">Sunny</div>
-</button> `
-    }  );
+</button> `;
+    });
+    forecastElement.innerHTML = forecastHTML;
 };
 //
 

@@ -54,14 +54,12 @@ function displayForecast(response) {
     forecastHTML = 
         forecastHTML + 
 `<div>
-    <button class="forecastButton">
         <h5 class="weather-forecast-date">${forecastDay}</h5>
         <div class="icon" id="icon"> ${getEmojiFromIconCode(forecast[0].condition.icon)};</div>
         <div class="tempNumber" id="forecast">${forecast.day}</div>
         <span class="fahrenheit" id="fahForcast"> &deg <a href="#" id="fahrenheit-link">F</a> |</span>
         <span class="celsius" id="celForecast">&deg <a href="#" id="celsius-link">C</a> </span>
         <div class="weatherD" id="weatherD">${forecast[0].condition.description} </div>
-    </button>
 </div>`;
 });
     forecastHTML = forecastHTML + `</div>`;

@@ -141,7 +141,7 @@ let fahrenheitlink = document.querySelector("#fahrenheit-link");
 fahrenheitlink.addEventListener("click", displayFahrenheit);
 //
 
-displayForecast();
+
 
 
 

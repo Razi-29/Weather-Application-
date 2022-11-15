@@ -56,7 +56,7 @@ function displayForecast() {
         forecastHTML + 
 `<div>
     <button class="forecastButton">
-        <h5 class="weather-forecast-date">${daysoftheWeek}</h5>
+        <h5 class="weather-forecast-date">${forecastDays}</h5>
         <div class="icon" id="icon">🌞 </div>
         <div class="tempNumber" id="forecast">74</div>
         <span class="fahrenheit" id="fahForcast"> &deg <a href="#" id="fahrenheit-link">F</a> |</span>

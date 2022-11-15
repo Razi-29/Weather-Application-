@@ -45,7 +45,20 @@ function getEmojiFromIconCode(iconCode) {
 //
 
 // Forecast //
-let forecastHTML = document.querySelector("#forecast");
+function displayForecast() {
+    let forecastElement = document.querySelector("#forecast");
+    let forecastHTML = "";
+    forecastHTML = `<button class="forcastButton">
+    <div class="delta">
+        <h5 class="weather-forecast-date">friDAY</h5>
+        <div class="icon" id="icon">🌞 </div>
+        <div class="tempNumber" id="forecast">74</div>
+        <span class="fahrenheit" id="fahForcast"> &deg <a href="#" id="fahrenheit-link">F</a> |</span>
+        <span class="celsius" id="celForecast">&deg <a href="#" id="celsius-link">C</a> </span>
+        <div class="weatherD" id="weatherD">Sunny</div>
+    </div>
+</button> `
+};
 //
 
 
@@ -118,7 +131,7 @@ let fahrenheitlink = document.querySelector("#fahrenheit-link");
 fahrenheitlink.addEventListener("click", displayFahrenheit);
 //
 
-
+displayForecast();
 
 
 

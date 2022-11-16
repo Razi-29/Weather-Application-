@@ -56,7 +56,7 @@ function displayForecast(response) {
     
             forecastHTML =
                 forecastHTML + `<div>
-        <h5 class="weather-forecast-date">${forecastDay}</h5>
+        <h5 class="weather-forecast-date">${forecastDay.time}</h5>
         <div class="icon" id="icon"> ${getEmojiFromIconCode(forecast[0].condition.icon)};</div>
         <div class="tempNumber" id="forecast">${forecast.day}</div>
         <span class="fahrenheit" id="fahForcast"> &deg <a href="#" id="fahrenheit-link">F</a> |</span>

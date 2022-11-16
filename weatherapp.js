@@ -15,11 +15,11 @@ function formatDate(timestamp) {
     let date = current.getDate();
 
     h1.innerHTML = `${month} ${date}, ${year} ${dayName} ${hour}:${minutes} EST`
-}
+};
 
 function formatDay(timestamp) {
-    let date = new Date(timestamp * 1000);
-    let day = date.getDay();
+    let current = new Date(timestamp * 1000);
+    let day = current.getDay();
     let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
     return days[day];
@@ -66,7 +66,7 @@ function displayForecast(response) {
             forecastHTML =
                 forecastHTML + `<div>
         <button class="forecastButton">
-        <h5 class="weather-forecast-date">${formatDay(forecastDay.dt)}</h5>
+        <h5 class="weather-forecast-date">${formatDay(forecastDay.time)}</h5>
         <div class="icon" id="icon"> ${getEmojiFromIconCode(forecastDay.condition.icon)} </div>
         <div class="tempNumber" id="forecast">${Math.round(forecastDay.temperature.day)}&degF </div>
         <div class="weatherD" id="weatherD">${forecastDay.condition.description} </div>

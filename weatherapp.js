@@ -107,7 +107,7 @@ function showTemp(response) {
     document.querySelector("h3").innerHTML = getEmojiFromIconCode(response.data.condition.icon);
    
     fahrenheitTemperature = response.data.temperature.current;
-    getForecast(response.data.city);
+    
 };
 
 function searchCity(cityInput) {
@@ -149,7 +149,7 @@ fahrenheitlink.addEventListener("click", displayFahrenheit);
 //
 
 searchCity("Milan");
-
+getForecast(response.data.city);
 
 
 

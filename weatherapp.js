@@ -57,7 +57,7 @@ function displayForecast(response) {
             forecastHTML =
                 forecastHTML + `<div>
         <button class="forecastButton">
-        <h5 class="weather-forecast-date">${forecast.time}</h5>
+        <h5 class="weather-forecast-date">${forecastDay.time}</h5>
         <div class="icon" id="icon"> ${getEmojiFromIconCode(forecastDay.condition.icon)} </div>
         <div class="tempNumber" id="forecast">${math.round(forecastDay.temperature.day)} + &degF </div>
         <div class="weatherD" id="weatherD">${forecastDay.condition.description} </div>

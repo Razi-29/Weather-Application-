@@ -62,7 +62,7 @@ function displayForecast(response) {
         <div class="tempNumber" id="forecast">${forecast[1].temperature.day}</div>
         <span class="fahrenheit" id="fahForcast"> &deg <a href="#" id="fahrenheit-link">F</a> |</span>
         <span class="celsius" id="celForecast">&deg <a href="#" id="celsius-link">C</a> </span>
-        <div class="weatherD" id="weatherD">${forecast[1].condition.description} </div>
+        <div class="weatherD" id="weatherD">${forecastDay.condition.description} </div>
         </button>
 </div>`;
         }

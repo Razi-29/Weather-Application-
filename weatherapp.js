@@ -1,5 +1,5 @@
 // Time & Date //
-function formatDate(timestamp) {
+ 
     let current = new Date(timestamp);
     let h1 = document.querySelector("h1");
     let year = current.getFullYear();
@@ -15,7 +15,6 @@ function formatDate(timestamp) {
     let date = current.getDate();
 
     h1.innerHTML = `${month} ${date}, ${year} ${dayName} ${hour}:${minutes} EST`
-};
 
 function formatDay(timestamp) {
     let current = new Date(timestamp * 1000);

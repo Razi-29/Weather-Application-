@@ -48,8 +48,8 @@ function getEmojiFromIconCode(iconCode) {
 function displayForecast(response) {
     let forecast = response.data.daily;
 
-    let forecastElement = document.querySelector("#forecastButton");
-    let forecastHTML = `<div class="forecastButton">`;
+    let forecastElement = document.querySelector("#forecastweather");
+    let forecastHTML = `<div class="forecastweather">`;
     forecast.forEach(function (forecastDay, index) {
         if (index < 6) {
     

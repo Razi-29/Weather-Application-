@@ -70,12 +70,11 @@ forecastHTML = forecastHTML + `</div>`;
     console.log(forecastHTML);
     forecastElement.innerHTML = weatherForecfastHTML
 };
-//
 
-// Forecast API//
-function searchCity(cityInput) {
-let apiKey = "3a4dft388a1bcaf4e40f706coecb9a01";
-let apiUrl = "https://api.shecodes.io/weather/v1/forecast?query="+cityInput+"&key="+apiKey+"&units=imperial";
+function getForecast(forecastCity) {
+    let apiKey = "3a4dft388a1bcaf4e40f706coecb9a01";
+    let name = forecastCity.data.city;
+    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${name}&key=${apiKey}&units=imperial`;
     axios.get(apiUrl).then(displayForecast);
 };
 //
@@ -108,7 +107,7 @@ function showTemp(response) {
     document.querySelector("h3").innerHTML = getEmojiFromIconCode(response.data.condition.icon);
    
     fahrenheitTemperature = response.data.temperature.current;
-
+    getForecast(response.data.city);
 };
 
 function searchCity(cityInput) {

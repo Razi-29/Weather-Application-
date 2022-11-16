@@ -71,11 +71,10 @@ forecastHTML = forecastHTML + `</div>`;
     forecastElement.innerHTML = weatherForecfastHTML
 };
 
-function getForecast(forecastCity) {
+function getForecast(cityInput) {
     console.log(getForecast);
     let apiKey = "3a4dft388a1bcaf4e40f706coecb9a01";
-    let name = forecastCity.data.city;
-    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${name}&key=${apiKey}&units=imperial`;
+    let apiUrl = "https://api.shecodes.io/weather/v1/forecast?query="+cityInput+"&key="+apiKey+"&units=imperial";
     axios.get(apiUrl).then(displayForecast);
 };
 //

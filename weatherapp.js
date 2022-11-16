@@ -58,8 +58,8 @@ function displayForecast(response) {
                 forecastHTML + `<div>
         <button class="forecastButton">
         <h5 class="weather-forecast-date">${forecast.time}</h5>
-        <div class="icon" id="icon"> ${getEmojiFromIconCode(forecast[0].condition.icon)} </div>
-        <div class="tempNumber" id="forecast">${math.round(forecastDay.temperature.day)} + &degF; </div>
+        <div class="icon" id="icon"> ${getEmojiFromIconCode(forecastDay.condition.icon)} </div>
+        <div class="tempNumber" id="forecast">${math.round(forecastDay.temperature.day)} + &degF </div>
         <div class="weatherD" id="weatherD">${forecastDay.condition.description} </div>
         </button>
 </div>`;
@@ -147,7 +147,7 @@ let fahrenheitlink = document.querySelector("#fahrenheit-link");
 fahrenheitlink.addEventListener("click", displayFahrenheit);
 //
 
-searchCity("Milan");
+searchCity("Miami");
 
 
 

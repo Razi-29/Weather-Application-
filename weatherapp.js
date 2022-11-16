@@ -1,19 +1,29 @@
-// Time & Date
-let current = new Date();
-let h1 = document.querySelector("h1");
-let year = current.getFullYear();
-let hour = current.getHours();
-let minutes = current.getMinutes();
-if (minutes < 10) { 
-    minutes = `0${minutes}`;
-}
-let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-let dayName = days[current.getDay()];
-let months = ["Jan", "Feb", "Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
-let month = months[current.getMonth()];
-let date = current.getDate();
+// Time & Date //
+function formatDate(timestamp) {
+    let current = new Date(timestamp);
+    let h1 = document.querySelector("h1");
+    let year = current.getFullYear();
+    let hour = current.getHours();
+    let minutes = current.getMinutes();
+    if (minutes < 10) {
+        minutes = `0${minutes}`;
+    }
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    let dayName = days[current.getDay()];
+    let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    let month = months[current.getMonth()];
+    let date = current.getDate();
 
-h1.innerHTML = `${month} ${date}, ${year} ${dayName} ${hour}:${minutes} EST`
+    h1.innerHTML = `${month} ${date}, ${year} ${dayName} ${hour}:${minutes} EST`
+}
+
+function formatDay(timestamp) {
+    let date = new Date(timestamp * 1000);
+    let day = date.getDay();
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+    return days[day];
+}
 //
 
 //Icons//
@@ -56,7 +66,7 @@ function displayForecast(response) {
             forecastHTML =
                 forecastHTML + `<div>
         <button class="forecastButton">
-        <h5 class="weather-forecast-date">${forecastDay.time}</h5>
+        <h5 class="weather-forecast-date">${formatDay(forecastDay.dt)}</h5>
         <div class="icon" id="icon"> ${getEmojiFromIconCode(forecastDay.condition.icon)} </div>
         <div class="tempNumber" id="forecast">${Math.round(forecastDay.temperature.day)}&degF </div>
         <div class="weatherD" id="weatherD">${forecastDay.condition.description} </div>

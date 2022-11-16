@@ -50,7 +50,7 @@ function displayForecast(response) {
 
     let forecastElement = document.querySelector("#forecastButton");
     let forecastTemp = Math.round(forecastDay.temperature.day);
-    let forecastHTML = `<div class="forecastweather">`;
+    let forecastHTML = `<div class="forecastButton">`;
     forecast.forEach(function (forecastDay, index) {
         if (index < 6) {
     

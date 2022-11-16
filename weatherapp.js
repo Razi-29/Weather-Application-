@@ -68,7 +68,7 @@ function displayForecast(response) {
 });
 forecastHTML = forecastHTML + `</div>`;
     console.log(forecastHTML);
-    forecastElement.innerHTML = weatherForecfastHTML
+    forecastElement.innerHTML = forecastHTML;
 };
 
 function getForecast(cityInput) {

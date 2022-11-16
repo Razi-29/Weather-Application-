@@ -49,7 +49,7 @@ function displayForecast(response) {
     let forecast = response.data.daily;
 
     let forecastElement = document.querySelector("#forecastweather");
-
+    let forecastTemp = Math.round(forecastDay.temperature.day);
     let forecastHTML = `<div class="forecastweather">`;
     forecast.forEach(function (forecastDay, index) {
         if (index < 6) {
@@ -59,7 +59,7 @@ function displayForecast(response) {
         <button class="forecastButton">
         <h5 class="weather-forecast-date">${forecastDay.time}</h5>
         <div class="icon" id="icon"> ${getEmojiFromIconCode(forecastDay.condition.icon)} </div>
-        <div class="tempNumber" id="forecast">${Math.round(forecastDay.temperature.day)} + &degF </div>
+        <div class="tempNumber" id="forecast">${forecastTemp} + &degF </div>
         <div class="weatherD" id="weatherD">${forecastDay.condition.description} </div>
         </button>
 </div>`;

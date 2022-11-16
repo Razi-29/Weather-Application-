@@ -72,6 +72,7 @@ forecastHTML = forecastHTML + `</div>`;
 };
 
 function getForecast(forecastCity) {
+    console.log(getForecast);
     let apiKey = "3a4dft388a1bcaf4e40f706coecb9a01";
     let name = forecastCity.data.city;
     let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${name}&key=${apiKey}&units=imperial`;
@@ -107,7 +108,7 @@ function showTemp(response) {
     document.querySelector("h3").innerHTML = getEmojiFromIconCode(response.data.condition.icon);
    
     fahrenheitTemperature = response.data.temperature.current;
-    
+    getForecast(response.data.city);
 };
 
 function searchCity(cityInput) {
@@ -149,7 +150,7 @@ fahrenheitlink.addEventListener("click", displayFahrenheit);
 //
 
 searchCity("Milan");
-getForecast(response.data.city);
+
 
 
 

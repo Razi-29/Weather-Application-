@@ -49,7 +49,6 @@ function displayForecast(response) {
     let forecast = response.data.daily;
 
     let forecastElement = document.querySelector("#forecastButton");
-    let forecastTemp = Math.round(forecastDay.temperature.day);
     let forecastHTML = `<div class="forecastButton">`;
     forecast.forEach(function (forecastDay, index) {
         if (index < 6) {
@@ -71,7 +70,6 @@ forecastHTML = forecastHTML + `</div>`;
 };
 
 function getForecast(cityInput) {
-    console.log(getForecast);
     let apiKey = "3a4dft388a1bcaf4e40f706coecb9a01";
     let apiUrl = "https://api.shecodes.io/weather/v1/forecast?query="+cityInput+"&key="+apiKey+"&units=imperial";
     axios.get(apiUrl).then(displayForecast);

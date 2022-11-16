@@ -58,10 +58,8 @@ function displayForecast(response) {
                 forecastHTML + `<div>
         <button class="forecastButton">
         <h5 class="weather-forecast-date">${forecast.time}</h5>
-        <div class="icon" id="icon"> ${getEmojiFromIconCode(forecast[0].condition.icon)};</div>
-        <div class="tempNumber" id="forecast">${forecast[1].temperature.day}</div>
-        <span class="fahrenheit" id="fahForcast"> &deg <a href="#" id="fahrenheit-link">F</a> |</span>
-        <span class="celsius" id="celForecast">&deg <a href="#" id="celsius-link">C</a> </span>
+        <div class="icon" id="icon"> ${getEmojiFromIconCode(forecast[0].condition.icon)} + &degF;</div>
+        <div class="tempNumber" id="forecast">${math.round(forecastDay.temperature.day)}</div>
         <div class="weatherD" id="weatherD">${forecastDay.condition.description} </div>
         </button>
 </div>`;

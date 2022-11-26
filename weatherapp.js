@@ -63,7 +63,7 @@ function displayForecast(response) {
         if (index < 6) {
     
             forecastHTML =
-                forecastHTML + `<div>
+                forecastHTML + `<div class="row">
         <button class="forecastButton">
         <h5 class="weather-forecast-date">${formatDay(forecastDay.time)}</h5>
         <div class="icon" id="icon"> ${getEmojiFromIconCode(forecastDay.condition.icon)} </div>

@@ -43,9 +43,6 @@ h2 {
     padding-block-start: 10px;
     font-family:aboreto;
 }
-.cond {
-    
-}
 h3 { 
         font-size: 100px;
 }
@@ -118,4 +115,8 @@ font-size: 12px;
     font-size: 16px;
     padding-block-start: 10px;
     font-family: aboreto;
+}
+.forecastweather {
+    display: flex;
+    flex-direction: column;
 }

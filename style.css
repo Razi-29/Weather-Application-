@@ -116,7 +116,7 @@ font-size: 12px;
     padding-block-start: 10px;
     font-family: aboreto;
 }
-.forecastweather {
+.container{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

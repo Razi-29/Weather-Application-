@@ -60,9 +60,9 @@ function displayForecast(response) {
     let forecastElement = document.querySelector("#forecastweather");
     forecast.forEach(function (forecastDay, index) {
         if (index < 6) {
-    
+        let forecastHTML = `<div class="container">`;
             forecastHTML =
-                forecastHTML + `<div class="container" >
+                forecastHTML + `<div>
         <button class="forecastButton">
         <h5 class="weather-forecast-date">${formatDay(forecastDay.time)}</h5>
         <div class="icon" id="icon"> ${getEmojiFromIconCode(forecastDay.condition.icon)} </div>

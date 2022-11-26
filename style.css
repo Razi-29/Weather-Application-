@@ -116,7 +116,7 @@ font-size: 12px;
     padding-block-start: 10px;
     font-family: aboreto;
 }
-.container{
+.row{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;

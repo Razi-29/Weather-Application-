@@ -70,7 +70,7 @@ function displayForecast(response) {
         <div class="weatherD" id="weatherD">${forecastDay.condition.description} </div>
         </button>
 </div>`;
-        }
+ }
 });
 forecastHTML = forecastHTML + `</div>`;
     forecastElement.innerHTML = forecastHTML;

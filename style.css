@@ -4,7 +4,7 @@
    border-radius: 30px; 
    margin: 30px auto;
    display:block;
-background-image: linear-gradient(to bottom right, #C9DEF4, #D0DBEF, #D8D8E9, #DFD5E4, #E6D2DF, #EECFD9, #F5CCD4);
+    background-image: linear-gradient(to bottom right, #fff2f6, #ffd7e2, #fff2f6);
 }
 .forecast {
     text-align:center;
@@ -20,6 +20,9 @@ margin-top: 20px;
 .features {
 font-size: 14px;
 list-style: none;
+}
+body {
+    background: #f9f7fe;
 }
 
 h1 {
@@ -80,12 +83,18 @@ position: relative;
 }
 
 .currentLocation {
-    border-radius: 15px;
-    width: 200px;
-    height: 34px;
-    margin: 6px 0px 0px 0px;
-    border: 1px solid rgb(239, 228, 240);
-    background-image: rgb(239, 228, 240);
+    font-family: aboreto;
+border-radius: 15px;
+width: 200px;
+height: 34px;
+margin: 6px 0px 0px 0px;
+border: 1px solid rgb(252 241 253);
+background-image: linear-gradient(to bottom right, #f9f7fe, #fff2f6, #f9f7fe);
+}
+.submit {
+    font-family: aboreto;
+border: 1px solid rgb(252 241 253);
+background-image: linear-gradient(to bottom right, #f9f7fe, #fff2f6, #f9f7fe);
 }
 .delta {
     text-align:center;
@@ -101,10 +110,11 @@ position: relative;
 
 
 .forecastButton {
-    border-radius: 30px;
-    width:125px;
-    border: 1px solid rgb(239, 228, 240);
-background-image: rgb(239, 228, 240);
+    font-family: aboreto;
+border-radius: 30px;
+width:125px;
+border: 1px solid rgb(252 241 253);
+background-image: linear-gradient(to bottom right, #f9f7fe, #fff2f6, #f9f7fe);
 font-size: 12px;
 }
 
